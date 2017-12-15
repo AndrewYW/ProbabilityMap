@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="962.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.HeuristicController">
+    <children>
+        <SplitPane dividerPositions="0.21070811744386875" layoutX="77.0" layoutY="67.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="798.0" prefWidth="359.0">
+               <children>
+                  <SplitPane dividerPositions="0.4579831932773109" layoutY="49.0" prefHeight="179.0" prefWidth="240.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                    <Label text="Map Files" />
+                                    <ListView fx:id="mapList" prefHeight="200.0" prefWidth="200.0" />
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                    <Label text="Ground Files" />
+                                    <ListView fx:id="groundList" prefHeight="200.0" prefWidth="200.0" />
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Label alignment="CENTER" layoutY="27.0" text="Select Files" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+                </AnchorPane>
+                <AnchorPane fx:id="MapAnchor" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
